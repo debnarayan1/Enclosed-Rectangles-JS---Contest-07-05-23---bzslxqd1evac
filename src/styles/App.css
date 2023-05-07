@@ -1,20 +1,12 @@
-import React, {useEffect, useState} from 'react'
-import '../styles/App.css';
+h1 {
+    color: #27aedb;
+    text-align: center;
+    }
 
-const App = () => {
-  const [changeColor, setChangeColor] = useState(false);
 
-const handleClick=()=>{
-  setChangeColor(!changeColor)
+button{
+    color: #27aedb;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-
-  return (
-    <div id="main">
-      <p className={`${(changeColor===true)?'blueColor':'redColor'}`} >Newton School</p>
-      <button id='button' onClick={handleClick}>Change Style</button>
-    </div>
-  )
-}
-
-
-export default App;
